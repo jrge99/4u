@@ -192,7 +192,7 @@ h1 em{font-style:normal;color:var(--green-mid)}
     </div>
     <form method="POST" action="https://api.web3forms.com/submit" id="leadForm">
       <input type="hidden" name="access_key" value="01dc2c2f-75d0-425c-a531-e05076810f40">
-      <input type="hidden" name="redirect" value="https://4umg.com/?success">
+      <input type="hidden" name="redirect" value="https://4umg.com/success.html">
       <input type="hidden" name="subject" value="New Lead — 4U Management Group">
       <input type="hidden" name="from_name" value="4U Management Group">
       <input type="hidden" name="campaign" value="Cannabis Licensees">
@@ -245,17 +245,7 @@ h1 em{font-style:normal;color:var(--green-mid)}
       <button type="submit" class="cta-btn" id="submitBtn1">Get My Free Vendor Match <span class="arrow">→</span></button>
       <div class="form-guarantee"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg> Your information is kept private and confidential.</div>
     </form>
-    <div class="success-state" id="successState" style="display:none;text-align:center;padding:16px 0">
-      <div style="width:56px;height:56px;border-radius:50%;background:var(--green-pale);border:2px solid rgba(45,122,82,0.2);display:grid;place-items:center;margin:0 auto 20px;color:var(--green)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-      <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:400;letter-spacing:-0.3px;margin-bottom:10px;color:var(--ink)">You're matched.</h3>
-      <p style="font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:20px">We've received your request and will have a curated vendor introduction in your inbox within 24 hours.</p>
-      <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px;text-align:left">
-        <div style="font-size:11px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;color:var(--ink);margin-bottom:12px">What happens next</div>
-        <div style="display:flex;gap:12px;margin-bottom:10px"><div style="width:22px;height:22px;border-radius:50%;background:var(--green-pale);display:grid;place-items:center;font-size:11px;font-weight:600;color:var(--green);flex-shrink:0">1</div><div style="font-size:13px;color:var(--text);line-height:1.5">We review your request and identify the right vendor today.</div></div>
-        <div style="display:flex;gap:12px;margin-bottom:10px"><div style="width:22px;height:22px;border-radius:50%;background:var(--green-pale);display:grid;place-items:center;font-size:11px;font-weight:600;color:var(--green);flex-shrink:0">2</div><div style="font-size:13px;color:var(--text);line-height:1.5">You receive a direct email introduction to the vendor within 24 hours.</div></div>
-        <div style="display:flex;gap:12px"><div style="width:22px;height:22px;border-radius:50%;background:var(--green-pale);display:grid;place-items:center;font-size:11px;font-weight:600;color:var(--green);flex-shrink:0">3</div><div style="font-size:13px;color:var(--text);line-height:1.5">When you sign with the vendor, we send your 50% commission share within 30 days.</div></div>
-      </div>
-    </div>
+
   </div>
 </div>
 
@@ -469,17 +459,6 @@ function handleNeedChange(val) {
     field.style.display = 'none';
     ta.required = false;
   }
-}
-
-// ── Show success state if redirected back with ?success=true ──
-if (window.location.search.includes('success')) {
-  const form    = document.getElementById('leadForm');
-  const header  = document.querySelector('.form-card-header');
-  const success = document.getElementById('successState');
-  if (form)    form.style.display    = 'none';
-  if (header)  header.style.display  = 'none';
-  if (success) success.style.display = 'block';
-  window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
 // ── Repeat CTA form ──
