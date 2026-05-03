@@ -190,8 +190,11 @@ h1 em{font-style:normal;color:var(--green-mid)}
       <h2>Tell us what you need</h2>
       <p>Takes 90 seconds. We handle the rest.</p>
     </div>
-    <form method="POST" action="https://formspree.io/f/mpqbqapw" id="leadForm">
-      <input type="hidden" name="_next" value="https://4umg.com/?success">
+    <form method="POST" action="https://api.web3forms.com/submit" id="leadForm">
+      <input type="hidden" name="access_key" value="01dc2c2f-75d0-425c-a531-e05076810f40">
+      <input type="hidden" name="redirect" value="https://4umg.com/?success">
+      <input type="hidden" name="subject" value="New Lead — 4U Management Group">
+      <input type="hidden" name="from_name" value="4U Management Group">
       <input type="hidden" name="campaign" value="Cannabis Licensees">
       <div class="field-row">
         <div class="field"><label>First Name</label><input type="text" name="first_name" id="firstName" placeholder="First name" required></div>
