@@ -192,7 +192,7 @@ h1 em{font-style:normal;color:var(--green-mid)}
     </div>
     <form method="POST" action="https://api.web3forms.com/submit" id="leadForm">
       <input type="hidden" name="access_key" value="01dc2c2f-75d0-425c-a531-e05076810f40">
-      <input type="hidden" name="redirect" value="https://4umg.com/success_franchise.html">
+      <input type="hidden" name="redirect" value="https://4umg.com/success.html">
       <input type="hidden" name="subject" value="New Lead — 4U Management Group">
       <input type="hidden" name="from_name" value="4U Management Group">
       <input type="hidden" name="campaign" value="New Franchise Owners">
@@ -457,7 +457,7 @@ h1 em{font-style:normal;color:var(--green-mid)}
 function handleNeedChange(val) {
   const field = document.getElementById('multipleNeedsField');
   const ta    = document.getElementById('multipleNeeds');
-  if (val === 'Multiple things — need help with several') {
+  if (val.toLowerCase().includes('multiple')) {
     field.style.display = 'block';
     ta.required = true;
   } else {
