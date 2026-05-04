@@ -220,65 +220,33 @@ h1 em{font-style:normal;color:var(--green-mid)}
         <textarea name="multiple_needs" id="multipleNeeds" placeholder="e.g. Banking, accounting, insurance, payroll..." rows="3" style="width:100%;background:var(--surface);border:1.5px solid var(--border);border-radius:8px;padding:12px 14px;font-family:'Outfit',sans-serif;font-size:15px;color:var(--ink);outline:none;resize:vertical;line-height:1.5;transition:border-color .15s"></textarea>
       </div>
       <div class="field">
-        <label>Tell us more about your situation</label>
-        <textarea name="specific_needs" id="specificNeeds" placeholder="The more specific you are, the better we can match you. Include timeline, budget range, any requirements..." rows="4" style="width:100%;background:var(--surface);border:1.5px solid var(--border);border-radius:8px;padding:12px 14px;font-family:'Outfit',sans-serif;font-size:15px;color:var(--ink);outline:none;resize:vertical;line-height:1.5;transition:border-color .15s" required></textarea>
-      </div>
-      <div class="field">
-        <label>State</label>
-        <select name="location" id="geo" required>
-          <option value="" disabled selected>Select...</option>
-          <option>Alabama</option>
-        <option>Alaska</option>
-        <option>Arizona</option>
-        <option>Arkansas</option>
-        <option>California</option>
-        <option>Colorado</option>
-        <option>Connecticut</option>
-        <option>Delaware</option>
-        <option>Florida</option>
-        <option>Georgia</option>
-        <option>Hawaii</option>
-        <option>Idaho</option>
-        <option>Illinois</option>
-        <option>Indiana</option>
-        <option>Iowa</option>
-        <option>Kansas</option>
-        <option>Kentucky</option>
-        <option>Louisiana</option>
-        <option>Maine</option>
-        <option>Maryland</option>
-        <option>Massachusetts</option>
-        <option>Michigan</option>
-        <option>Minnesota</option>
-        <option>Mississippi</option>
-        <option>Missouri</option>
-        <option>Montana</option>
-        <option>Nebraska</option>
-        <option>Nevada</option>
-        <option>New Hampshire</option>
-        <option>New Jersey</option>
-        <option>New Mexico</option>
-        <option>New York</option>
-        <option>North Carolina</option>
-        <option>North Dakota</option>
-        <option>Ohio</option>
-        <option>Oklahoma</option>
-        <option>Oregon</option>
-        <option>Pennsylvania</option>
-        <option>Rhode Island</option>
-        <option>South Carolina</option>
-        <option>South Dakota</option>
-        <option>Tennessee</option>
-        <option>Texas</option>
-        <option>Utah</option>
-        <option>Vermont</option>
-        <option>Virginia</option>
-        <option>Washington</option>
-        <option>West Virginia</option>
-        <option>Wisconsin</option>
-        <option>Wyoming</option>
+        <label>Estimated Budget</label>
+        <select name="budget" id="budget" required>
+          <option value="" disabled selected>Select a range</option>
+          <option>Under $5,000</option>
+          <option>$5,000 – $15,000</option>
+          <option>$15,000 – $30,000</option>
+          <option>$30,000 – $50,000</option>
+          <option>$50,000+</option>
+          <option>Not sure yet</option>
         </select>
       </div>
+      <div class="field">
+        <label>Timeline</label>
+        <select name="timeline" id="timeline" required>
+          <option value="" disabled selected>When do you need this?</option>
+          <option>Immediately — within 1 week</option>
+          <option>Within 30 days</option>
+          <option>Within 60 days</option>
+          <option>Within 90 days</option>
+          <option>Just exploring for now</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Tell us more about your situation</label>
+        <textarea name="specific_needs" id="specificNeeds" placeholder="Any specific requirements, preferences, or details that would help us find the right match..." rows="4" style="width:100%;background:var(--surface);border:1.5px solid var(--border);border-radius:8px;padding:12px 14px;font-family:'Outfit',sans-serif;font-size:15px;color:var(--ink);outline:none;resize:vertical;line-height:1.5;transition:border-color .15s" required></textarea>
+      </div>
+
       <button type="submit" class="cta-btn" id="submitBtn1">Get My Free Vendor Match <span class="arrow">→</span></button>
       <div class="form-guarantee"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg> Your information is kept private and confidential.</div>
     </form>
