@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18133338852"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18133338852');
+</script>
+<!-- Event snippet for Submit lead form conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-18133338852/9duFCOni6accEOSV08ZD'});
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>You're Matched — 4U Management Group</title>
@@ -37,25 +49,6 @@ footer{padding:20px 24px;border-top:1px solid var(--border);text-align:center;fo
 footer a{color:var(--muted);text-decoration:none}
 @media(max-width:540px){h1{font-size:30px}.main{padding:40px 16px}.next-steps{padding:20px}}
 </style>
-<!-- Event snippet for Submit lead form conversion -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18133338852/9duFCOni6accEOSV08ZD',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
-<!-- Event snippet for Submit lead form conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-18133338852/9duFCOni6accEOSV08ZD'});
-</script>
 <script>
   // Fire conversion automatically when page loads
   gtag_report_conversion();
